@@ -811,7 +811,7 @@ impl Config {
                // log::debug!("Update rendezvous_server in config to {}", host);
                // log::debug!("{:?}", *ONLINE.lock().unwrap());
                 //config.rendezvous_server = host;        //不写日志，不写到配置文件     
-                config.store();
+              //  config.store();
             }
         }
     }
