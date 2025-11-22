@@ -928,7 +928,7 @@ impl Config {
         }
         config.key_confirmed = v;
         if !v {
-           // config.keys_confirmed = Default::default();//去写配置
+           config.keys_confirmed = Default::default();
         }
         config.store();
     }
@@ -942,7 +942,7 @@ impl Config {
             return;
         }
         let mut config = CONFIG.write().unwrap();
-        config.keys_confirmed.insert(host.to_owned(), v);
+        //config.keys_confirmed.insert(host.to_owned(), v); //去写配置
         config.store();
     }
 
