@@ -928,7 +928,7 @@ impl Config {
         }
         config.key_confirmed = v;
         if !v {
-            config.keys_confirmed = Default::default();
+           // config.keys_confirmed = Default::default();//去写配置
         }
         config.store();
     }
